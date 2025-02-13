@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Student Copy</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Uploaded Student Copies</h1>
+    <form action="/uploads" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf" required>
+        <button type="submit">Upload</button>
+    </form>
+    <hr>
+    <h2>Uploaded Files</h2>
+    <ul>
+        {% for file in files %}
+            <li>
+                <a href="{{ url_for('view_file', file_id=file.id) }}">{{ file.file_name }}</a>
+                (Uploaded on: {{ file.upload_date }})
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

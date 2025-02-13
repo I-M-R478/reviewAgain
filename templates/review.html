@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Student Copy</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <h1>Review Student Copy</h1>
+    <h3>File Name: {{ file.file_name }}</h3>
+    <h4>Uploaded on: {{ file.upload_date }}</h4>
+    <pre>{{ file.extracted_text }}</pre>
+    <a href="/">Back to Home</a>
+</body>
+</html>
