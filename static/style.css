@@ -1,0 +1,147 @@
+General Reset
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1 {
+    background-attachment: fixed;
+    background-color: #0fec55e8;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #007bff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+form input[type="file"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #eef1f5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin: 5px 0;
+    display: inline-block;
+    font-size: large;
+
+}
+
+button{
+    background-color: #ea13a9;
+    color: rgba(5, 238, 255, 0.892);
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #10e854;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+pre {
+    background-color: #f1f3f4;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 20px auto;
+    width: 90%;
+    overflow-x: auto;
+}
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f3f4;
+}
+
+table td a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+table td a:hover {
+    color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin: 30px 0;
+    color: #888;
+    font-size: 0.9rem;
+}
